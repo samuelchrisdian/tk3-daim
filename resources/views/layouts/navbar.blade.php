@@ -27,7 +27,7 @@
                                 </div>
                                 <div>
                                     <h6>{{ auth()->user()->name }}</h6>
-                                    <span>{{ auth()->user()->role == 0 ? 'Admin' : (auth()->user()->role == 2 ? 'HR' : 'Participant') }}</span>
+                                    <span>{{ auth()->user()->role->name }}</span>
                                 </div>
                             </div>
                             <div class="nav-author__options">
